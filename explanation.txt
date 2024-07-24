@@ -1,0 +1,27 @@
+Test Suite
+1. The test suite is labeled "API Testing".
+
+Test Case:
+1. The test case is named "GET API Data Details".
+
+Sending a GET Request:
+1. Uses the request object to send a GET request to the URL https://reqres.in/api/users/2.
+2. The request object is part of the testing framework and provides methods to interact with APIs.
+
+Handling the Response:
+1. The response from the GET request is stored in the response variable.
+2. The response object provides methods to inspect and manipulate the returned data.
+
+
+Status Code Check:
+1. Uses response.status() to get the HTTP status code of the response.
+2. Asserts that the status code is 200, indicating a successful request.
+
+Extracting and Checking Response Text:
+1. Uses response.text() to extract the response body as a plain text string.
+2. Stores the response text in the text variable.
+3. Asserts that the text contains the string 'Janet', ensuring the expected content is present.
+
+Logging the Response:
+1. Uses response.json() to parse the response body as JSON.
+2. Logs the JSON response to the console for debugging and verification purposes.
